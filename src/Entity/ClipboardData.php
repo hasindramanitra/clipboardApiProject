@@ -23,6 +23,7 @@ class ClipboardData
     #[ORM\JoinColumn(nullable: false)]
     private ?User $User = null;
 
+
     public function getId(): ?int
     {
         return $this->id;
