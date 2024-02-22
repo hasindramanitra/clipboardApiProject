@@ -45,7 +45,7 @@ class UserController extends AbstractController
 
 
 
-    #[Route('/user-management/users', name: 'users', methods:['GET'])]
+    #[Route('/api/user-management/users', name: 'users', methods:['GET'])]
     public function getUserList(): JsonResponse
     {
         $users = $this->userRepository->findAll();
